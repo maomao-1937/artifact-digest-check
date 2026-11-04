@@ -1,0 +1,6 @@
+[
+  {"args": ["artifact_digest_check.py", "--help"], "exit": 0},
+  {"args": ["artifact_digest_check.py", "fixtures/hello.txt", "sha256:5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03"], "exit": 0},
+  {"args": ["artifact_digest_check.py", "fixtures/hello.txt", "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"], "exit": 1},
+  {"args": ["artifact_digest_check.py", "fixtures/hello.txt", "bad-digest"], "exit": 2}
+]
